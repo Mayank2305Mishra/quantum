@@ -17,7 +17,6 @@ import {
 import { format } from "date-fns";
 import { 
   Calendar,
-  CalendarCell, 
   CalendarGrid, 
   CalendarHeader,
   CalendarHeading,
