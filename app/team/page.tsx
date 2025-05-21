@@ -1,5 +1,5 @@
 // Update the teamMembers array in app/team/page.tsx
-const teamMembers: TeamMember[] = [
+const export teamMembers: TeamMember[] = [
   {
     id: "1",
     name: "Anurag",
