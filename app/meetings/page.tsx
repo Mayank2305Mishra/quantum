@@ -15,18 +15,6 @@ import {
   Video 
 } from "lucide-react";
 import { format } from "date-fns";
-import { 
-  Calendar,
-  CalendarGrid, 
-  CalendarHeader,
-  CalendarHeading,
-  CalendarMonthValue,
-  CalendarNextButton, 
-  CalendarPrevButton,
-  CalendarNav,
-  CalendarViewControl,
-  CalendarView,
-} from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
