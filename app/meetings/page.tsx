@@ -707,50 +707,6 @@ export default function MeetingsPage() {
         </Card>
       ) : (
         <div className="grid gap-6 md:grid-cols-[300px_1fr]">
-          <Card>
-            <CardHeader>
-              <CardTitle>Calendar</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Calendar
-                mode="single"
-                selected={date}
-                onSelect={setDate}
-                className="rounded-md border"
-              />
-              <div className="mt-6 space-y-2">
-                <h3 className="text-sm font-medium">Meeting Types</h3>
-                <div className="flex items-center justify-between text-sm">
-                  <div className="flex items-center gap-2">
-                    <div className="h-3 w-3 rounded-full bg-blue-500"></div>
-                    <span>Remote</span>
-                  </div>
-                  <span className="text-muted-foreground">
-                    {meetings.filter(m => m.type === "remote").length}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between text-sm">
-                  <div className="flex items-center gap-2">
-                    <div className="h-3 w-3 rounded-full bg-green-500"></div>
-                    <span>In-Person</span>
-                  </div>
-                  <span className="text-muted-foreground">
-                    {meetings.filter(m => m.type === "in-person").length}
-                  </span>
-                </div>
-                <div className="mt-6 rounded-md bg-secondary/20 p-3">
-                  <h3 className="text-sm font-medium">
-                    {date ? format(date, "MMMM d, yyyy") : "Select a date"}
-                  </h3>
-                  {date && (
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {meetings.filter(m => m.date === date.toISOString().split("T")[0]).length} meetings scheduled
-                    </p>
-                  )}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
           
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
